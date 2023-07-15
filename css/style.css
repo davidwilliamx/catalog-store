@@ -10,3 +10,168 @@
     --vermelho: #c05761;
     --preto: #0A040B;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.header__nav {
+    font-family: var(--font-body-regular);
+}
+.header__nav__link {
+    font-weight: 700;
+    color: var(--preto);
+}
+.categoria__header__title {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    text-align: center;
+}
+.categoria__header__link {
+    color: var(--preto);
+}
+.categoria__header__link:hover {
+    color: var(--azul);
+}
+.categoria__mulher__link {
+    color: var(--azul);
+}
+.categoria__homem__link {
+    color: var(--verde);
+}
+.oferta__header__title {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    text-align: center;
+    color: var(--preto);
+}
+.oferta__header__link {
+    font-weight: 700;
+    color: var(--preto);
+}
+.card__title {
+    text-align: center;
+}
+.card__link {
+    font-weight: 700;
+    color: var(--preto);
+}
+.card__price {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--preto);
+}
+.card__parcela {
+    font-family: var(--font-body-regular);
+    color: var(--cinza2);
+}
+.card__btn {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+.empresa {
+    text-align: center;
+}
+.empresa__header__title {
+    font-family: var(--font-title-regular);
+    text-align: center;
+}
+.empresa__header__link {
+    font-weight: 700;
+    color: var(--preto);
+}
+.empresa__text {
+    font-family: var(--font-body-regular);
+    color: var(--cinza2);
+    text-align: justify;
+}
+.empresa__btn {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--preto);
+}
+.time__header__title {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    text-align: center;
+}
+.time__header__link {
+    color: var(--preto);
+    font-weight: 700;
+}
+.time__card__nome {
+    font-family: var(--font-title-regular);
+    color: var(--preto);
+}
+.time__card__nome > strong {
+    font-weight: 700;
+}
+.time__card__position {
+    font-family: var(--font-body-regular);
+    color: var(--cinza2);
+}
+.time__saiba__mais {
+    font-family: var(--font-body-regular);
+    color: var(--cinza2);
+    text-align: center;
+}
+.saiba__mais__btn {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--preto);
+}
+.footer__contato__title {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--preto);
+}
+.footer__contato__link {
+    font-family: var(--font-body-regular);
+    color: var(--cinza2);
+    font-weight: 700;
+}
+.footer__contato__link:hover {
+    text-decoration: underline;
+}
+.footer__empresa__title {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--preto);
+}
+.footer__empresa__link {
+    font-family: var(--font-body-regular);
+    font-weight: 700;
+    color: var(--cinza2);
+}
+.footer__empresa__link:hover {
+    text-decoration: underline;
+}
+.footer__ajuda__title {
+    font-family: var(--font-title-regular);
+    font-weight: 700;
+    color: var(--preto);
+}
+.footer__ajuda__link {
+    font-family: var(--font-body-regular);
+    font-weight: 700;
+    color: var(--cinza2);
+}
+.footer__ajuda__link:hover {
+    text-decoration: underline;
+}
+.footer__copy {
+    font-family: var(--font-title-regular);
+    text-align: center;
+    color:var(--cinza2);
+}
+.footer__direitos {
+    font-family: var(--font-title-regular);
+    text-align: center;
+    color: var(--cinza2);
+}
