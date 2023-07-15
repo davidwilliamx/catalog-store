@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Raleway:wght@400;600&display=swap');
+:root {
+    --font-title-regular: 'Arvo', serif;
+    --font-body-regular: 'Raleway', sans-serif;
+    --branco: #ffffff;
+    --cinza: #c4c4c4;
+    --cinza2: #3c3c3c;
+    --verde: #47d780;
+    --azul: #1597f4;
+    --vermelho: #c05761;
+    --preto: #0A040B;
+}
