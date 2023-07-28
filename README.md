@@ -2,7 +2,7 @@
 
 ## HTML, CSS e Bootstrap: Atividade Prática
 
-- Projeto loja virtual com Bootstrap
+- Projeto página com Bootstrap
 - Título da Prática: Aplicação do uso do bootstrap, cards, carousel e imagens em um documento
 HTML
 - Objetivo: O aluno precisa identificar, codificar as propriedades disponíveis do bootstrap e aplicar em
