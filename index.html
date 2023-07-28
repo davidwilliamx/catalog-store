@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog Store</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header id="header" class="container my-3">
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo.svg" alt="Logo Catalog Store">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#empresa">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipe">Nosso time</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="slider" class="container my-3">
+        <div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/nike-azul-dekstop.png" class="d-block w-100" alt="Tênis Azul">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/sapato-social-couro-desktop.png" class="d-block w-100" alt="Sapato Social Couro">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/nike-verde-desktop.png" class="d-block w-100" alt="Tênis Verde">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bota-verde-escuro-dekstop.png" class="d-block w-100" alt="Bota Verde Escuro">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+    
+    <main id="conteudo" class="container my-3">
+        <section id="categorias" class="categorias my-5">
+            <h3 class="categorias__title h3 text-center my-5">
+                <a href="#" title="Confira nossa variedade de calçados." class="categorias__link">Categorias</a>
+            </h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <picture>
+                            <source srcset="./images/categoria-mobile-mulher.png" media="(min-width: 768px)">
+                            <img src="./images/categoria-mulher-mobile.png" class="card-img-top img-fluid" alt="Mulher num parque sapatos vermelhos e roupas de inverno.">
+                        </picture>
+                        <div class="card-body d-grid gap-2">
+                            <a href="produtos.html" class="btn btn-success categorias__colecao-link" title="Confira nossa nova coleção.">Confira nova coleção</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <picture>
+                            <source srcset="./images/categoria-mobile-homem.png" media="(min-width: 768px)">
+                            <img src="./images/categoria-homem-mobile.png" class="card-img-top img-fluid" alt="Homem sentando em carro usando óculos escuros com uma jaqueta de couro e sapatos escuros.">
+                        </picture>
+                        <div class="card-body d-grid gap-2">
+                            <a href="produtos.html" class="btn btn-primary categorias__colecao-link" title="Confira nossa nova coleção.">Confira nova coleção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="novidades" class="novidades my-3">
+            <h3 class="novidades__title h3 text-center">
+                <a href="produtos.html" title="Confira os produtos recém chegados." class="novidades__link">Novidades</a>
+            </h3>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-group mb-1">
+                        <div class="card">
+                            <picture>
+                                <source srcset="./images/produto-tenis-big.jpg" media="(min-width: 1024px)">
+                                <source srcset="./images/produto-tenis-normal.jpg" media="(min-width: 425px)">
+                                <img src="./images/produto-tenis-pequeno.jpg" class="card-img-top" alt="Tênis sneakers preto e branco.">
+                            </picture>
+                            <div class="card-body">
+                                <h5 class="card-title fs-2 text-center w-100"><a href="produto.html" title="Tênis Legend Essential 3 Next Nature" class="produto__title">Tênis Legend Essential 3 Next Nature</a></h5>
+                                <span class="position-absolute top-0 start-0 badge rounded-pill bg-danger">Hot</span>
+                                <div class="card-body text-center col-md-12">
+                                    <p class="card-subtitle fs-5 produto__preco">R$ 250,00</p>
+                                    <p class="card-text produto__parcela">5x Sem juros</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="card-body text-center col-md-12 align-content-between">
+                                    <a href="#" class="btn btn-primary produto__btn w-100">Add <i class="bi bi-cart3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card me-1 ms-1">
+                            <picture>
+                                <source srcset="./images/tenis-converse-preto-vermelhobig.jpg" media="(min-width: 1024px)">
+                                <source srcset="./images/tenis-converse-preto-vermelho0.75.jpg" media="(min-width: 425px)">
+                                <img src="./images/tenis-converse-preto-vermelho0.5.jpg" class="card-img-top" alt="Tênis cano médio preto, vermelho e branco.">
+                            </picture>
+                            <div class="card-body">
+                                <h5 class="card-title fs-2 text-center w-100"><a href="produto.html" title="Tênis Legend Essential 3 Next Nature" class="produto__title">All Star Preto</a></h5>
+                                <span class="position-absolute top-0 start-0 badge rounded-pill bg-primary">Hot</span>
+                                <div class="card-body text-center col-md-12">
+                                    <p class="card-subtitle fs-5 produto__preco">R$ 59,90</p>
+                                    <p class="card-text produto__parcela">5x Sem juros</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="card-body text-center col-md-12 align-content-between">
+                                    <a href="#" class="btn btn-primary produto__btn w-100">Add <i class="bi bi-cart3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture>
+                                <source srcset="./images/bota-couro.jpg" media="(min-width: 1024px)">
+                                <source srcset="./images/bota-couro@75.jpg" media="(min-width: 425px)">
+                                <img src="./images/bota-couro@5x.jpg" class="card-img-top" alt="Bota de couro cano médio cor preta.">
+                            </picture>
+                            <div class="card-body">
+                                <h5 class="card-title fs-2 text-center w-100"><a href="produto.html" title="Tênis Legend Essential 3 Next Nature" class="produto__title">Bota de Couro Preto</a></h5>
+                                <span class="position-absolute top-0 start-0 badge rounded-pill bg-success">Hot</span>
+                                <div class="card-body text-center col-md-12">
+                                    <p class="card-subtitle fs-5 produto__preco">R$ 139,90</p>
+                                    <p class="card-text produto__parcela">5x Sem juros</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="card-body text-center col-md-12 align-content-between">
+                                    <a href="#" class="btn btn-primary produto__btn w-100">Add <i class="bi bi-cart3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card">
+                            <picture>
+                                <source srcset="./images/produto-tenis-big.jpg" media="(min-width: 1024px)">
+                                <source srcset="./images/produto-tenis-normal.jpg" media="(min-width: 425px)">
+                                <img src="./images/produto-tenis-pequeno.jpg" class="card-img-top" alt="Tênis sneakers preto e branco.">
+                            </picture>
+                            <div class="card-body">
+                                <h5 class="card-title fs-2 text-center w-100"><a href="produto.html" title="Tênis Legend Essential 3 Next Nature" class="produto__title">Tênis Legend Essential 3 Next Nature</a></h5>
+                                <div class="card-body text-center col-md-12">
+                                    <p class="card-subtitle fs-5 produto__preco">R$ 250,00</p>
+                                    <p class="card-text produto__parcela">5x Sem juros</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="card-body text-center col-md-12 align-content-between">
+                                    <a href="#" class="btn btn-primary produto__btn w-100">Add <i class="bi bi-cart3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card me-1 ms-1">
+                            <picture>
+                                <source srcset="./images/tenis-branco-normal.jpg" media="(min-width: 1024px)">
+                                <source srcset="./images/tenis-branco-075x.jpg" media="(min-width: 425px)">
+                                <img src="./images/tenis-branco-005x.jpg" class="card-img-top" alt="Tênis casual branco.">
+                            </picture>
+                            <div class="card-body">
+                                <h5 class="card-title fs-2 text-center w-100"><a href="produto.html" title="Tênis Legend Essential 3 Next Nature" class="produto__title">Tênis branco casual</a></h5>
+                                <div class="card-body text-center col-md-12">
+                                    <p class="card-subtitle fs-5 produto__preco">R$ 162,00</p>
+                                    <p class="card-text produto__parcela">5x Sem juros</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="card-body text-center col-md-12 align-content-between">
+                                    <a href="#" class="btn btn-primary produto__btn w-100">Add <i class="bi bi-cart3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture>
+                                <source srcset="./images/tenis-converse-preto-vermelhobig.jpg" media="(min-width: 1024px)">
+                                <source srcset="./images/tenis-converse-preto-vermelho0.75.jpg" media="(min-width: 425px)">
+                                <img src="./images/tenis-converse-preto-vermelho0.5.jpg" class="card-img-top" alt="Tênis cano médio preto, vermelho e branco.">
+                            </picture>
+                            <div class="card-body">
+                                <h5 class="card-title fs-2 text-center w-100"><a href="produto.html" title="Tênis Legend Essential 3 Next Nature" class="produto__title">All Star Preto</a></h5>
+                                <div class="card-body text-center col-md-12">
+                                    <p class="card-subtitle fs-5 produto__preco">R$ 59,90</p>
+                                    <p class="card-text produto__parcela">5x Sem juros</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="card-body text-center col-md-12 align-content-between">
+                                    <a href="#" class="btn btn-primary produto__btn w-100">Add <i class="bi bi-cart3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 text-center">
+                <p class="fs-4 produto__texto-oferta">Confira mais ofertas</p>
+                <a href="produtos.html" title="Clique e confira outras ofertas." class="produto__oferta-btn btn-link fs-6">Clique aqui</a>
+            </div>
+        </section>
+        <section id="empresa" class="empresa my-3">
+            <h3 class="empresa__title h3 text-center my-5 row">
+                <a href="empresa.html" title="Conheça a nossa história." class="empresa__link">Quem somos</a>
+            </h3>
+            <div class="row my-5">
+                <div class="col-sm-12 col-md-6 float-start align-self-center">
+                    <img src="./images/michael-dam-mEZ3PoFGs_k-unsplash.png" alt="Imagem de uma mulher sorrindo usando uma camisa vermelha." class="img-fluid rounded-circle">
+                </div>
+                <div class="col-sm-12 col-md-6 float-end align-self-center">
+                    <p class="empresa__text fs-5 text-center">Autem eos ea dignissimos tempora velit ut. Quia repellat repellendus voluptatem repudiandae voluptatem et illo. At velit dolorem et porro. Alias est dolorem ab provident. Deleniti assumenda dolor architecto excepturi autem error adipisci.</p>
+                </div>
+            </div>
+            <div class="row">
+                <a href="empresa.html" class="empresa__link btn-link my-5 text-center" title="Clique e saiba mais sobre a nossa empresa.">Continue lendo</a>
+            </div>
+        </section>
+        <section id="equipe" class="equipe my-3">
+            <h3 class="equipe__title h3 text-center mb-5">
+                <a href="equipe.html" class="equipe__link">Nosso time</a>
+            </h3>
+            <div class="row mb-5">
+                <div class="col">
+                    <div class="equipe__card-body card mb-3">
+                        <div class="row g-0">
+                            <div class="col-sm-2 col-md-2">
+                                <img src="./images/batel-studio-ttSRjiYG_WM-unsplash.png" class="equipe__card-image img-fluid rounded-circle" alt="Imagem mulher sorrindo.">
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div class="equipe__card-body card-body">
+                                    <h5 class="equipe__card-title card-title fw-light text-center">Lavinia <span class="fw-bold">Moreno</span></h5>
+                                    <p class="equipe__card-text card-text text-center">CEO</p>
+                                </div> 
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div class="card-body equipe__social-group text-center">
+                                    <a href="https://www.twitter.com" target="_blank" class="btn equipe__social-link" title="Me siga no Twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank" class="btn equipe__social-link" title="Me siga no Instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com" target="_blank" class="btn equipe__social-link" title="Me siga no LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equipe__card-body card mb-3">
+                        <div class="row g-0">
+                            <div class="col-sm-2 col-md-2">
+                                <img src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.png" class="equipe__card-image img-fluid rounded-circle" alt="Imagem mulher sorrindo.">
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div class="equipe__card-body card-body">
+                                    <h5 class="equipe__card-title card-title fw-light text-center">Coral <span class="fw-bold">Lohrenz</span></h5>
+                                    <p class="equipe__card-text card-text text-center">Diretora de Conteúdo</p>
+                                </div> 
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div class="card-body equipe__social-group text-center">
+                                    <a href="https://www.twitter.com" target="_blank" class="btn equipe__social-link" title="Me siga no Twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank" class="btn equipe__social-link" title="Me siga no Instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com" target="_blank" class="btn equipe__social-link" title="Me siga no LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equipe__card-body card mb-3">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-sm-2 col-md-2">
+                                <img src="./images/leilani-angel-K84vnnzxmTQ-unsplash.png" class="equipe__card-image img-fluid rounded-circle" alt="Imagem mulher sorrindo.">
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div class="equipe__card-body card-body">
+                                    <h5 class="equipe__card-title card-title fw-light text-center">Victor <span class="fw-bold">Yoon</span></h5>
+                                    <p class="equipe__card-text card-text text-center">Desenvolvedor</p>
+                                </div> 
+                            </div>
+                            <div class="col-sm-5 col-md-5">
+                                <div class="card-body equipe__social-group text-center">
+                                    <a href="https://www.twitter.com" target="_blank" class="btn equipe__social-link" title="Me siga no Twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank" class="btn equipe__social-link" title="Me siga no Instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com" target="_blank" class="btn equipe__social-link" title="Me siga no LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="equipe.html" class="equipe__link btn-link my-5 text-center" title="Clique e saiba mais sobre a nossa equipe.">Continue lendo</a>
+            </div>
+        </section>
+        <section id="contato" class="contato my-5">
+            <h3 class="contato__title h3 text-center mb-5">
+                <a href="#contato" class="contato__link">Entre em contato</a>
+            </h3>
+            <div class="row">
+                <form class="row g-3 needs-validation mb-5" novalidate>
+                    <div class="col-md-6">
+                        <label for="validationCustom01" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Ok!
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom02" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <div class="valid-feedback">
+                            Ok!
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Por favor informe uma cidade válida.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Estado</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Escolha...</option>
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor escolha um estado válido.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Por favor informe um CEP válido.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="validationTextarea" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="validationTextarea" placeholder="Escreva aqui uma mensagem." required></textarea>
+                            <div class="invalid-feedback">
+                              Digite a sua mensagem.
+                            </div>
+                          </div>
+                        
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Aceito os termos de contrato
+                            </label>
+                            <div class="invalid-feedback">
+                                Você precisa marcar a opção antes de continuar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar dados</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer" class="container">
+        <div class="row justify-content-between">
+            <div class="col-sm-auto mb-4">
+                <h4 class="footer__localizacao-title">Vamos conversar</h4>
+                <div class="list-group footer-localizacao__lista">
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-localizacao__item"><i class="bi bi-geo-alt pe-2"></i>Rua Argentinos Juniors, 6822</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-localizacao__item"><i class="bi bi-telephone pe-2"></i>00 9 9000 - 0000</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-localizacao__item"><i class="bi bi-envelope pe-2"></i>suporte@catalog.br</a>
+                </div>
+            </div>
+            <div class="col-sm-auto mb-4">
+                <h4 class="footer__empresa-title">A empresa</h4>
+                <div class="list-group footer-empresa__lista">
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-empresa__item">Quem somos</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-empresa__item">Nosso time</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-empresa__item">Trabalhe conosco</a>
+                </div>
+            </div>
+            <div class="col-sm-auto mb-4">
+                <h4 class="footer__ajuda-title">Ajuda</h4>
+                <div class="list-group footer-ajuda__lista">
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-ajuda__item">Perguntas frequentes</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-ajuda__item">Rastreamento de pedidos</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-ajuda__item">Devolução</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-ajuda__item">Formas de pagamento</a>
+                    <a href="#" class="list-group-item px-0 list-group-item-action border-0 footer-ajuda__item">Termos &amp; Condições</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-4 text-center">
+                <div class="card-body footer-social__lista d-flex">
+                    <a href="https://www.twitter.com" target="_blank" class="list-group-item list-group-item-action footer-social__item" title="Siga-nos no Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="list-group-item list-group-item-action footer-social__item" title="Siga-nos no Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="list-group-item list-group-item-action footer-social__item" title="Siga-nos no LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="list-group-item list-group-item-action footer-social__item" title="Siga-nos no LinkedIn"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p class="footer__copy-date">Catalog 2023</p>
+                <p class="footer__copy-text">Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
